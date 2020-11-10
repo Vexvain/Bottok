@@ -1,34 +1,26 @@
-## Requirements
+![](https://i.ibb.co/tbHb4nw/coollogo-com-12306968.png)
+
+# Requirements
 Python 3
   
-## Install dependency
+# Install Dependencies
 <pre>pip install selenium
 pip install pyfiglet==0.7.5</pre>
 
-## How to use
-1. Download this repo
-2. Make sure all dependencies installed
-3. Open tiktodv3.py using Code Editor and edit line
-<pre>vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
-auto = 1 #Read comment above this line for more info</pre>
-4. python tiktodv3.py
-5. **You still have to manual complete captcha check (only for first time you run the code)**
+# Usage
+- Type `git clone https://github.com/Vexvain/Bottok.git`
 
-## Few things
-1. Use RDP to get tons of views or fans (run 24/7)
-2. If you are using Chrome ver 84, you don't need to download chromedriver again (won't cause error). But, if you are not using Chrome ver 84, then download the right version like your Chrome version. [**Download here**](https://chromedriver.chromium.org/downloads)
-3. If the website update like removed one or some features, just change the auto value. e.g If the website removed auto views, you can use auto hearts features only, don't use value = 1 or value = 3
+- Make sure all dependencies are installed
 
-## Result preview
-![Preview](https://i.imgur.com/WZY91W6.png)
+- Open bottok.py by using `nano bottok.py` or any code editor of your choice. Edit the line:
+<pre>vidUrl = "YOUR_URL" #Change YOUR_URL to any TikTok video URL
+auto = 1 #Read above this line for more info</pre>
 
-## Special thanks
-1. Thanks to https://vipto.de/ for providing great free service like this
-2. People who ask for and recommend this website
+- Run `python bottok.py`
 
-## Tik Tok Auto Views V1 (DON'T USE V1)
-[**JavaScript**](https://github.com/kangoka/tiktok-autoviews) or 
-[**Python**](https://github.com/kangoka/tiktok-autoviews-py)
+***You will have to manually complete the captcha check but only omce!***
 
-## Tik Tok Auto Views V2
-[**Python**](https://github.com/kangoka/tiktok-autoviewsv2-py)
+# Extra
+- Use RDP to get a fat load of views or fans. You can run it 24/7
+
+- If you are using Chrome ver 84, you don't need to download chromedriver again. If you are not using Chrome ver 84, then download the correct version that matches yours. [***Download here***](https://chromedriver.chromium.org/downloads)

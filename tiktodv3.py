@@ -33,11 +33,11 @@ def loop1():
         driver.refresh()
         i += 1
         total = i * 1000
-        print("Views success delivered! Total", total,"views")
+        print("Views have been delivered! Total:", total,"views")
         time.sleep(55)
         loop1()
     except:
-        print("An error occured. Now will retry again")
+        print("An error occured. We'll try again")
         driver.refresh()
         loop1()
 
@@ -59,77 +59,16 @@ def loop2():
         driver.find_element_by_xpath("/html/body/div[4]/div[3]/div/div/div/div/div[1]/div/form/button").click()
         driver.refresh()
         hearts = driver.find_element_by_xpath('//*[@id="c2VuZE9nb2xsb3dlcnNfdGlrdG9r"]/span').text
-        print(hearts," Success delivered!")
+        print(hearts,"Hearts have been delivered!")
         time.sleep(605)
         loop2()
     except:
-        print("An error occured. Now will retry again")
+        print("An error occured. We'll try again")
         driver.refresh()
         loop2()
 
+
 def loop3():
-    def hearts():
-        global i, x, a
-        x = 0
-        time.sleep(10)
-        try:
-            driver.find_element_by_xpath("/html/body/div[3]/div[1]/div[3]/div/div[2]/div/button").click()
-        except:
-            print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
-            driver.refresh()
-            hearts()
-        try:
-            time.sleep(2)
-            driver.find_element_by_xpath("/html/body/div[3]/div[3]/div/div/div/form/div/input").send_keys(vidUrl)
-            time.sleep(1)
-            driver.find_element_by_xpath("/html/body/div[3]/div[3]/div/div/div/form/div/div/button").click()
-            time.sleep(3)
-            driver.find_element_by_xpath("/html/body/div[3]/div[3]/div/div/div/div/div[1]/div/form/button").click()
-            time.sleep(3)
-            driver.refresh()
-            a += 1
-            total = a * 25
-            print("Hearts success delivered! Total estimated", total,"hearts")
-            views()
-        except:
-            print("An error occured. Now will retry again")
-            driver.refresh()
-            hearts()
-
-    def views():
-        global i, x
-        time.sleep(10)
-        try:
-            driver.find_element_by_xpath("/html/body/div[3]/div[1]/div[3]/div/div[4]/div/button").click()
-        except:
-            print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
-            driver.refresh()
-            views()
-        try:
-            time.sleep(2)
-            driver.find_element_by_xpath("/html/body/div[3]/div[4]/div/div/div/form/div/input").send_keys(vidUrl)
-            time.sleep(1)
-            driver.find_element_by_xpath("/html/body/div[3]/div[4]/div/div/div/form/div/div/button").click()
-            time.sleep(2)
-            driver.find_element_by_xpath("/html/body/div[3]/div[4]/div/div/div/div/div/div[1]/div/form/button").click()
-            driver.refresh()
-            x += 1
-            i += 1
-            total = i * 1000
-            print("Views success delivered! Total", total,"views")
-            if x < 5:
-                time.sleep(50)
-                views()
-            else:
-                hearts()
-        except:
-            print("An error occured. Now will retry again")
-            driver.refresh()
-            views()
-
-    hearts()
-
-def loop4():
     time.sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[1]/div/button").click()
@@ -151,25 +90,24 @@ def loop4():
         time.sleep(318)
         loop4()
     except:
-        print("An error occured. Now will retry again")
+        print("An error occured. We'll try again")
         driver.refresh()
         loop4()
 
-vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL. This URL used to get views or hearts or both
-username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
+vidUrl = "YOUR_URL" #Change YOUR_URL to any TikTok video URL
+username = "YOUR_USERNAME" #Change YOUR_USERNAME to the username of the user that uploaded the TikTok video
 
 system("cls")
-tiktod = pyfiglet.figlet_format("TIKTOD V3", font="slant")
-print(tiktod)
-print("Author: https://github.com/kangoka")
+bottok = pyfiglet.figlet_format("BOTTOK", font="slant")
+print(bottok)
+print("Vexvain")
 print("")
 
 """
-You can change auto value below
+You can change the auto value below
 auto = 1 for auto views
 auto = 2 for auto hearts
-auto = 3 for auto views + hearts (PATCHED)
-auto = 4 for auto followers
+auto = 3 for auto followers
 """
 auto = 1 #Change this
 
@@ -179,9 +117,6 @@ if auto == 1:
 elif auto == 2:
     driver.get("https://vipto.de/")
     loop2()
-elif auto == 3:
-    driver.get("https://vipto.de/")
-    loop3()
 else:
     driver.get("https://vipto.de/")
-    loop4()
+    loop3()

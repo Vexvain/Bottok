@@ -18,7 +18,10 @@ auto = 1 #Read above this line for more info</pre>
 
 - Run `python bottok.py`
 
-***You will have to manually complete the captcha check but only omce!***
+- If you wish to hide your IP, run the **TOR.sh** script: <br/>
+`bash TOR.sh`
+
+***You'll have to manually complete the captcha check, but only once!***
 
 # Extra
 - Use RDP to get a fat load of views or fans. You can run it 24/7

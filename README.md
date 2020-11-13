@@ -18,8 +18,7 @@ auto = 1 #Read above this line for more info</pre>
 
 - Run `python bottok.py`
 
-- If you wish to hide your IP, run the **TOR.sh** script: <br/>
-`bash TOR.sh`
+- If you wish to hide your IP, run the **TOR.sh** script: `bash TOR.sh`
 
 ***You'll have to manually complete the captcha check, but only once!***
 
